@@ -1,0 +1,31 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
+}
+
+.list_style {
+    color: #8b0000;
+    padding: 20px;
+    list-style: none;
+    border-style: solid;
+    background-color: #ececec;
+    margin: 10px;
+}
+
+li {
+    color: black;
+    margin-left: 0px;
+    padding: 5px;
+}
+
+#error_msg {
+    background-color: #f3e8e8;
+    border: solid #e30808;
+    padding: 30px;
+    color: #e30808;
+}

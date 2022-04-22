@@ -23,16 +23,15 @@ async function callApi() {
                 break;
             }
             console.log(results[i].name);
-            resultsContainer.innerHTML += `<ul>${results[i].name}
-            <li>${results[i].rating}</li>
-            <li>${results[i].tags.length}</li>
+            resultsContainer.innerHTML += `<ul class="list_style"><strong>${results[i].name}</strong>
+            <li>rating: ${results[i].rating}</li>
+            <li>number of tags: ${results[i].tags.length}</li>
             </ul>`
         }
     } catch (error) {
-        resultsContainer.innerHTML = `<div>An error occured when calling the API</div>`;
+        resultsContainer.innerHTML = `<div id="error_msg">An error occured when calling the API </div>`;
         console.log(error);
     }
 };
-
 
 callApi()
