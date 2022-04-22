@@ -29,3 +29,7 @@ li {
     padding: 30px;
     color: #e30808;
 }
+
+.loader {
+    font-size: 2rem;
+}
